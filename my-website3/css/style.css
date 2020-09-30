@@ -1,4 +1,8 @@
 /* *************************** start style of header *************************** */
+*{
+    transition:1s ease-in-out all ;
+}
+
 header
 {
     background-image: url(../images/back2.jpg);
