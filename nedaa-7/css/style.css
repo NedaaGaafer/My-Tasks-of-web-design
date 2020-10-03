@@ -1,0 +1,152 @@
+*
+{
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+     box-sizing: border-box;
+    text-transform: capitalize;
+}
+/* end style of body */
+body {
+    margin: 0; 
+    padding: 0;
+    perspective: 600px;
+    background-image: url(../images/imag3.jpg);
+    background-size: 100% 100%
+}
+/* end style of body */
+
+/* start style of headern */
+header
+{
+    background: #444;
+    padding: 5px;
+    color: #808;
+    font-size: 20px
+}
+header ul li
+{
+    display: inline-block;
+    margin-left: 30px;
+}
+a {text-decoration: none; color: #808}
+header ul li img
+{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 5px;
+}
+header ul .last
+{
+    float: right;
+}
+/* end style of header */
+
+/* end style of header */
+aside
+{
+    position: fixed;
+    
+}
+aside a
+{
+    display: block;
+    margin: 2px 0;
+    background: #606;
+    padding: 8px;
+    width: 100px;
+    position: relative;
+    left: -80px;
+    text-align: center;
+    transition: all 1s ease-in-out;
+    border-radius:3px
+}
+aside a:hover
+{
+    left: 0
+}
+/* end style of header */
+
+/* end style of article one */
+.one
+{
+    position: relative;
+    top:100px;
+    box-shadow:
+        5px 6px 9px 3px #808,
+        -5px -6px 9px 3px #768;
+    padding: 30px;
+    border: 1px solid #333;
+    width: 800px;
+    margin: auto;
+    text-align: center;
+    background: black;
+    color: white
+}
+.one section
+{
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+    margin: 20px;
+    box-shadow:
+        4px 4px 6px 3px #ff0,
+        -4px -4px 6px 3px #070 ;
+}
+.one div
+{
+    border: 1px solid #333;
+    border-top-left-radius: 60%;
+    border-bottom-right-radius: 60%;
+    width: 90px;
+    padding: 20px;
+    margin: 30px auto;
+    background: linear-gradient( to top,red,black);
+    color: #666
+}
+/* end style of article one */
+
+/* start style of article two */
+.two
+{
+    margin: 200px 0;
+    text-align: center;
+    
+}
+.two img
+{
+    width: 50px;
+    height: 50px;
+    transition: all 1s ease-in-out;
+}
+.two img:hover
+{
+    -webkit-transform: rotate(360deg) scale(2);
+    -moz-transform: rotate(360deg) scale(2);
+    -o-transform: rotate(360deg) scale(2);
+    -ms-transform: rotate(360deg) scale(2); 
+}
+/* end style of article two */
+
+/* start style of article three */
+.three { background: rgba(0,0,0,.8); padding: 10px}
+.three section
+{
+    overflow: hidden;
+    margin: 50px 0;
+    padding: 20px;
+}
+.three section img
+{
+    width: 200px;
+    height: 200px;
+    transition: all 1s ease-in-out;
+}
+.three section img:hover
+{
+    transform: translate3d(300px,-100px,100px)
+}
+/* end style of article three */
+
