@@ -1,0 +1,304 @@
+*
+{
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+     box-sizing: border-box;
+    text-transform: capitalize;
+}
+/* end style of body */
+body {
+    margin: 0; 
+    padding: 0;
+    background-image: url(../images/Death-Note.jpg);
+    background-size: 100% 100%
+}
+/* end style of body */
+
+/* start style of headern */
+header
+{
+    background: #790000;
+    padding: 5px;
+    color: #808;
+    font-size: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    
+}
+header ul li
+{
+    display: inline-block;
+    margin-left: 30px;
+    color: black
+}
+header ul li:first-of-type, input
+{
+    background: black;
+    color:#790000;
+    padding: 5px;
+    margin-left: 0
+}
+a {text-decoration: none; color: #790000 }
+
+header ul .last
+{
+    float: right;
+}
+/* end style of header */
+
+/* end style of header */
+aside
+{
+    position: fixed;
+    top:100px;
+    z-index: 9;
+    
+}
+aside a
+{
+    display: block;
+    margin: 2px 0;
+    background: #790000;
+    padding: 10px;
+    width: 100px;
+    position: relative;
+    left: -80px;
+    text-align: center;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    border-radius:3px;
+    color: black;
+    border: 1px solid black
+}
+aside a:hover
+{
+    left: 0
+}
+/* end style of header */
+
+/* star style of article one */
+.one {
+    position: relative;
+    top: 100px;
+    padding: 30px
+}
+
+.one section
+{
+    background: #790000;
+    width: 300px;
+    padding: 10px;
+    margin: 10px auto;
+    resize: horizontal;
+    overflow: hidden;
+    -webkit-box-shadow: 4px 4px 6px #dabbbb;
+    -o-box-shadow: 4px 4px 6px #dabbbb;
+    -moz-box-shadow: 4px 4px 6px #dabbbb;
+    box-shadow: 4px 4px 6px #dabbbb;
+}
+
+.one .first 
+{
+   
+    overflow: hidden;
+    white-space: nowrap;
+    border: 1px solid black;
+    -webkit-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -moz-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+.one .second .par
+{
+    display: flex;
+    background: black;
+    height: 60px;
+}
+.one .second div
+{
+    background: #333;
+    text-align: center;
+    height: 50px;
+    margin: 5px;
+    flex-basis: 50px;
+    color: #790000
+}
+
+/* end style of article one */
+
+/* star style of article two */
+.two
+{
+    margin-top: 100px; 
+    display: flex;
+    -webkit-justify-content: space-around;
+    -o-justify-content: space-around;
+    -moz-justify-content: space-around;
+    justify-content: space-around;
+}
+
+.two section{
+    position: relative;
+    -webkit-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+    width: 22%;
+    height: 350px;
+    -webkit-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    
+}
+.two section >div
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    -webkit-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.two section .front
+{
+    background-size: 100% 100%;
+    z-index: 2;
+    border: 3px solid #790000;
+    
+   
+    
+}
+.two section .back
+{
+    background: #790000;
+    z-index:1;
+    padding-top: 50px;
+    transform: rotateY(180deg);
+    border: 3px solid black
+}
+
+.two section:hover
+{
+    -webkit-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+/* end style of article two */
+
+/* start style of article three */
+.three
+{
+    background: black;
+    margin-top: 100px;
+    perspective: 400px;
+    padding: 20px 60px;
+    border: 5px groove #790000;
+}
+.three .imag
+{
+    -webkit-transition: all 2.5s ease-in-out;
+    -o-transition: all 2.5s ease-in-out;
+    -moz-transition: all 2.5s ease-in-out;
+    transition: all 2.5s ease-in-out;
+
+}
+.three .imag:hover
+{
+    -webkit-opacity: .001;
+    -o-opacity: .001;
+    -moz-opacity: .001;
+    opacity: .001;
+    -webkit-transform: translateX(700px);
+    -o-transform: translateX(700px);
+    -moz-transform: translateX(700px);
+    transform: translateX(700px);
+}
+/* end style of article three */
+
+/* start style of article four */
+.four
+{
+    margin: 50px auto;
+    padding: 30px
+}
+.four section
+{
+    -webkit-column-count: 4;
+    -o-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+    -wekit-column-rule: solid #790000;
+    -o-column-rule: solid #790000;
+    -moz-column-rule: solid #790000;
+    column-rule: solid #790000;
+    -wedkit-column-gap: 30px;
+    -o-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    -webkit-resize: horizontal;
+    -moz-resize: horizontal;
+    -o-resize: horizontal;
+    resize: horizontal;
+    overflow: hidden;
+    width: 500px;
+    -webkit-column-width: 200px;
+    -o-column-width: 200px;
+    -moz-column-width: 200px;
+    column-width: 200px;
+    background: rgba(0,0,0,.9);
+    color: #555;
+    padding: 10px;
+    margin: auto;
+    -webkit-border: 3px solid #790000;
+    -o-border: 3px solid #790000;
+    -moz-border: 3px solid #790000;
+    border: 3px solid #790000;
+    -o-box-shadow: 5px 5px 7px #fff, -5px -5px 10px #790000
+    -webkit-box-shadow: 5px 5px 7px #fff, -5px -5px 10px #790000;
+    -moz-box-shadow: 5px 5px 7px #fff, -5px -5px 10px #790000;
+    box-shadow: 5px 5px 7px #fff, -5px -5px 10px #790000;
+    
+}
+section h2{
+    -wbkit-column-span: all;
+    -o-column-span: all;
+    -moz-column-span: all;
+    column-span: all;
+}
+/* end style of article four */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
