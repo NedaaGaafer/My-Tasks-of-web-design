@@ -1,0 +1,250 @@
+*{
+    box-sizing: border-box;
+}
+
+/* ******************************* start style of body ******************************* */
+body
+{
+    padding: 0;
+    margin: 0;
+    background: black
+}
+/* ******************************* end style of body ******************************* */
+
+/* ******************************* start style of nav ******************************* */
+nav
+{
+    background: #333;
+    height: 36px;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+nav ul
+{
+    float: right;
+    margin: 0;
+    height: 100%
+}
+nav ul li
+{
+    display: inline-block;
+    height: 100%;
+    padding: 9px;
+    margin-right: 5px
+}
+
+nav > a 
+{
+    background: #444;
+    display: inline-block;
+    height: 100%;
+    padding: 9px;
+    text-decoration: none;
+    color: black
+}
+
+nav  li:hover{
+    background: #555;
+}
+ 
+label input{display: none}
+label
+{
+    display: inline-block;
+    width: 60px;
+    height: 100%;
+    position: relative;
+    float: right;
+    margin-right: 1px;
+    display: none;
+    
+    
+}
+label span
+{
+    position: absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    cursor: pointer;
+    background: #9e9c9c;
+    
+}
+
+label span:before
+{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 26px;
+    bottom: 5px;
+    left: 5px;
+    background: #fff
+}
+label input:checked + span{
+    background: #6363f9;
+}
+label input:checked + span:before{
+    transform: translateX(30px)
+}
+/* ******************************* end style of nav ******************************* */
+
+/* ******************************* start style of header ******************************* */
+header
+{
+    background-image: url(../images/kurama.jpg);
+    height: 1000px;
+    background-size: 100% 100%;
+}
+header article img
+{
+    display: none;
+    height: 700px;
+    margin: auto;
+    width: 400px;
+    margin-left: 30%;
+    margin-top: 100px
+}
+
+@media (min-width:1000px){
+    
+    .one
+    {
+        display: inline
+    }
+    
+}
+
+@media (min-width:600px)AND (max-width:1000px){
+    
+    .two
+    {
+        display: inline
+    }
+    
+    
+}
+@media (min-width:100px) AND (max-width:600px){
+    
+    .three
+    {
+        display: inline;
+        margin-left: 10%
+    }
+    
+    label
+    {
+        display: inline;
+        float: right;
+    }
+    ul
+   
+    
+}
+/* ******************************* end style of header ******************************* */
+
+/* ******************************* start style of anima ******************************* */
+.anima
+{
+    content: url(../images/fanc4.png);
+    margin: auto;
+    position: relative;
+    top: 100px;
+    
+}
+.anima:hover
+    {
+        animation: rot .3s infinite ;
+    }
+
+ @keyframes rot{
+        
+        0%
+        {
+            content: url(../images/fanc3.png);
+            transform: rotate(0deg)
+        }
+        10%
+        {
+            content: url(../images/fanc4.png);
+            transform: rotate(36deg)
+        }
+        20%
+        {
+           content: url(../images/fanc2.png);
+            transform: rotate(72deg) 
+        }
+        30%
+        {
+            content: url(../images/fanc4.png);
+            transform: rotate(108deg)
+        }
+        40%
+        {
+            content: url(../images/fanc2.png);
+            transform: rotate(144deg)
+        }
+     50%
+        {
+            content: url(../images/fanc3.png);
+            transform: rotate(144deg)
+        }
+     60%
+        {
+            content: url(../images/fanc4.png);
+            transform: rotate(144deg)
+        }
+     70%
+        {
+            content: url(../images/fanc2.png);
+            transform: rotate(144deg)
+        }
+     80%
+        {
+            content: url(../images/fanc3.png);
+            transform: rotate(144deg)
+        }
+     90%
+        {
+            content: url(../images/fanc4.png);
+            transform: rotate(144deg)
+        }
+     100%
+        {
+            content: url(../images/fanc2.png);
+            transform: rotate(144deg)
+        }
+    }
+/* ******************************* end style of anima ******************************* */
+
+/* ******************************* start style of deth ******************************* */
+@font-face
+{
+    font-family: "Death";
+    src: url(../css/Death_Note_Font_by_Karlibell22.ttf)  
+}
+.death{
+    height: 300px; 
+    color: white; 
+    position: relative;
+    top: 150px;
+    text-align: center;
+    font-family: Death
+}
+/* ******************************* end style of deth ******************************* */
+
+
+
+
+
+
+
+
+
+
+
+
+
