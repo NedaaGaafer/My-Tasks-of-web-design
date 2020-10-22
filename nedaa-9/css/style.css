@@ -1,5 +1,8 @@
 *{
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 /* ******************************* start style of body ******************************* */
@@ -21,20 +24,19 @@ nav
     z-index: 3;
 }
 
-nav ul
+label ul
 {
-    float: right;
     margin: 0;
-    height: 100%
+    width: 100%;
+    display: none
 }
-nav ul li
+ 
+label ul li
 {
-    display: inline-block;
     height: 100%;
     padding: 9px;
-    margin-right: 5px
+    display: inline-block
 }
-
 nav > a 
 {
     background: #444;
@@ -52,15 +54,10 @@ nav  li:hover{
 label input{display: none}
 label
 {
-    display: inline-block;
-    width: 60px;
     height: 100%;
     position: relative;
-    float: right;
     margin-right: 1px;
-    display: none;
-    
-    
+    float: right;
 }
 label span
 {
@@ -69,8 +66,10 @@ label span
     top:0;
     right:0;
     bottom:0;
+    width: 60px;
     cursor: pointer;
     background: #9e9c9c;
+    display: none;
     
 }
 
@@ -85,7 +84,7 @@ label span:before
     background: #fff
 }
 label input:checked + span{
-    background: #6363f9;
+    background: #03337b;
 }
 label input:checked + span:before{
     transform: translateX(30px)
@@ -99,6 +98,26 @@ header
     height: 1000px;
     background-size: 100% 100%;
 }
+header aside
+{
+    top: 50px;
+    position: fixed
+}
+header aside a{
+    display: block;
+    position: relative;
+    width: 100px;
+    background: #fc600a;
+    color: black;
+    margin-top: 3px;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    left: -80%;
+    transition: all 1s ease-in-out
+}
+header aside a:hover{left: 0}
+
 header article img
 {
     display: none;
@@ -113,7 +132,13 @@ header article img
     
     .one
     {
-        display: inline
+        display: inline;
+        
+    }
+    
+    label ul
+    {
+        display: inline;
     }
     
 }
@@ -125,7 +150,9 @@ header article img
         display: inline
     }
     
-    
+    label ul{
+        display: inline;
+    }
 }
 @media (min-width:100px) AND (max-width:600px){
     
@@ -134,15 +161,34 @@ header article img
         display: inline;
         margin-left: 10%
     }
-    
     label
     {
-        display: inline;
-        float: right;
+        width: 60px;
     }
-    ul
-   
     
+    label span{
+        display: inline-block;
+        z-index: 10
+    }
+   
+    label input:checked ~ ul{
+        display:inline;
+        position: absolute;
+        width: 200px;
+        right: 1%;
+        background: #883505;
+        top:35px;
+        padding: 0;
+        margin: 0;
+        text-align: center
+    }
+    ul li{
+        width: 100%;
+    }
+    ul li:hover{
+        
+        background: #6f2b04
+    }
 }
 /* ******************************* end style of header ******************************* */
 
@@ -190,32 +236,32 @@ header article img
      50%
         {
             content: url(../images/fanc3.png);
-            transform: rotate(144deg)
+            transform: rotate(180deg)
         }
      60%
         {
             content: url(../images/fanc4.png);
-            transform: rotate(144deg)
+            transform: rotate(216deg)
         }
      70%
         {
             content: url(../images/fanc2.png);
-            transform: rotate(144deg)
+            transform: rotate(252deg)
         }
      80%
         {
             content: url(../images/fanc3.png);
-            transform: rotate(144deg)
+            transform: rotate(288deg)
         }
      90%
         {
             content: url(../images/fanc4.png);
-            transform: rotate(144deg)
+            transform: rotate(324deg)
         }
      100%
         {
             content: url(../images/fanc2.png);
-            transform: rotate(144deg)
+            transform: rotate(360deg)
         }
     }
 /* ******************************* end style of anima ******************************* */
@@ -227,12 +273,11 @@ header article img
     src: url(../css/Death_Note_Font_by_Karlibell22.ttf)  
 }
 .death{
-    height: 300px; 
-    color: white; 
-    position: relative;
-    top: 150px;
+    color: white;
+    margin: 150px auto;
     text-align: center;
-    font-family: Death
+    font-family: Death;
+    
 }
 /* ******************************* end style of deth ******************************* */
 
