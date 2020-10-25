@@ -53,9 +53,9 @@ header .left
 {
     float: left;
     -webkit-border-bottom-right-radius: 100%;
-    -o-border-bottom-left-radius: 100%;
-    -moz-border-bottom-left-radius: 100%;
-    border-bottom-left-radius: 100%
+    -o-border-bottom-right-radius: 100%;
+    -moz-border-bottom-right-radius: 100%;
+    border-bottom-right-radius: 100%
 }
 header section 
 {
@@ -470,6 +470,7 @@ nav ul li a:hover{color:#505d66;}
 .anim section .back
 {
     background: #f56d87;
+    background: linear-gradient( to left, #f56d87,black);
     -webkit-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
