@@ -318,6 +318,11 @@ nav ul li a:hover{color:#505d66;}
     border:2px solid #333;
     
 }
+.imag .img1:hover
+{
+     transform: translate3d(10px, 70px, -30px);
+    
+}
 
 .imag .img2
 {
@@ -327,6 +332,11 @@ nav ul li a:hover{color:#505d66;}
     transform: translate3d(180px, 80px, 200px);
     transform-style: preserve-3d;
     border:2px solid #333;
+    
+}
+.imag .img2:hover
+{
+     transform: translate3d(180px, 80px, 190px);
     
 }
 
@@ -339,6 +349,11 @@ nav ul li a:hover{color:#505d66;}
     border:2px solid #333;
    
 }
+.imag .img3:hover
+{
+     transform: translate3d(200px, 80px, 240px);
+    
+}
 .imag .img4
 {
     -webkit-transform: translate3d(200px, 80px, 290px);
@@ -346,6 +361,11 @@ nav ul li a:hover{color:#505d66;}
     -moz-transform: translate3d(200px, 80px, 290px);
     transform: translate3d(200px, 80px, 290px);
     border:2px solid #333;
+}
+.imag .img4:hover
+{
+     transform: translate3d(200px, 80px, 280px);
+    
 }
 /* ************************************************** end style of imag ************************************************** */
 
