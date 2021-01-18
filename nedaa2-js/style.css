@@ -1,0 +1,116 @@
+*
+{box-sizing: border-box}
+body
+{
+    margin: 0;
+    padding: 0; 
+    background-image: url(imeg/img.jpg);
+    background-size: 100% 100%
+}
+header
+{
+    background: #072a6f;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+a{text-decoration: none; color: white;display: inline-block;}
+header > a
+{
+    background: #fff;
+    display: inline-block;
+    height: 100%;
+    padding: 5px;
+    color: blue;
+}
+header ul
+{
+    float: right;
+    margin-right: 30px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+header ul li
+{
+    display: inline-block;
+    margin-right: 30px;
+    padding-top: 15px;
+    width: 60px;
+    text-align: center;
+    height: 100%
+}
+header ul li:hover
+{
+    background: #fff;
+    opacity: .4
+}
+header ul li:hover > a
+{
+    background: #fff;
+    color:blue;
+}
+.one
+{
+    background-image: url(../nedaa-js/images/5889.jpg);
+    background-size: 100% 100%;
+    margin:auto;
+    padding-top: 100px;
+    height: 500px;
+    text-align: center
+}
+article section
+{
+    background: #93b3d0;
+    padding:10px;
+    border-radius:20px;
+    margin:40px auto 5px auto;
+    width: 500px;
+    text-align: center
+}
+.one div
+{
+    display: inline-block;
+    background: #517ab5;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius:10px;
+    text-align: center
+}
+
+.one section p {display: inline-block; margin: 0;}
+
+.one article button
+{
+    margin: 20px auto;
+    width: 60px;
+    border-radius: 30px;
+    padding: 10px;
+    background: #fff
+}
+ .two, .date, .three, .four, .inp
+{
+    text-align: center;
+    border: 4px solid #888;
+    padding: 10px;
+    margin: 10px 0
+}
+
+.two div, .date div, .three div, .four div
+{
+    background: #fff;
+    width: 300px;
+    margin: 60px auto;
+    text-align: center
+}
+
+.inp
+{
+    width: 300px;
+    margin: 60px auto;
+    text-align: center
+}
+
+.inp div{ text-align: center; background: #fff; width: 50px; margin: 10px auto}
