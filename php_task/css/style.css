@@ -1,0 +1,12 @@
+.card-img {
+    height: 300px !important;
+}
+
+.card-img-overlay{
+    background-color: #333a;
+}
+
+.form-style{
+    background: linear-gradient(to bottom right, #460dff, #960015) !important;
+    border-radius: 50px 0;
+}
